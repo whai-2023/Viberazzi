@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Mulan",
       "owner": "Jiho",
-      "image": "/images/Mulan.jpg",
+      "image": "images/Mulan.jpg",
       "breed": "Domestic Long Hair",
       "describtion": "She was adobted from SPCA. She spends most of the day outside and guards the house to ensure me and my husband is safe."
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "name": "Frank",
       "owner": "Michael",
-      "image": "/images/Frank.png",
+      "image": "/images/Frank.jpg",
       "breed": "Domestic Short Hair",
       "describtion": "He is a very friendly boy, and was saved from a box dumped in a countdown parking lot."
     },
@@ -35,7 +35,7 @@
       "id": 5,
       "name": "Ollie",
       "owner": "Michael",
-      "image": "/images/Ollie.png",
+      "image": "/images/Ollie.jpg",
       "breed": "Domestic Short Hair",
       "describtion": "He is a lovely boy, but only accepts a limited number of pats before he absolutely destroys your hand. He chose us, just showed up at my flat  in 2012. Could not find the owners after a few weeks of searching, so I took him in permanently."
     },
@@ -43,7 +43,7 @@
       "id": 6,
       "name": "Chi",
       "owner": "Siza",
-      "image": "/images/Chi.png",
+      "image": "/images/Chi.jpeg",
       "breed": "Golden Hamster",
       "describtion": "He loves to chew on anything he can get his hands on!  Come close and try to pat him, and he'll run!!!"
     }
