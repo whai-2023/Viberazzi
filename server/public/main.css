@@ -1,6 +1,6 @@
 body {
   background-color: #933708;
-  font-family: 'Spirax', cursive;
+  font-family: 'Arial', narrow;
 }
 
 .container {
@@ -30,8 +30,8 @@ body {
 }
 
 .img-circle {
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 75px;
+  object-fit: fill;
   width: 230px;
   height: 230px;
 }
