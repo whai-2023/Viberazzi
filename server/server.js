@@ -19,18 +19,16 @@ server.set('views', __dirname + '/views')
 // Your routes/router(s) should go here
 
 // homepage route
-server.get('/', (req, res) => {
-  fs.readFile(path.join(__dirname, './data/data.json'), 'utf8', (err, data) => {
-    if (err) {
-      res.send('Error reading file')
-    } else {
-      res.render('home', JSON.parse(data))
-    }
-  })
+server.get('/', async (req, res) => {
+  const pets = await fs.readFile(
+    path.join(__dirname, './data/data.json'),
+    'utf8'
+  )
+  res.render('home', JSON.parse(pets))
 })
 
 // pet/:id route
-server.get('/puppies/:id', async (req, res) => {
+server.get('/pets/:id', async (req, res) => {
   const puppiesId = parseInt(req.params.id)
 
   const puppyData = await fs.readFile(
@@ -41,6 +39,7 @@ server.get('/puppies/:id', async (req, res) => {
   const puppy = puppies.find((puppy) => puppy.id === puppiesId)
 
   res.render('details', puppy)
+  console.log(puppy)
 })
 
 module.exports = server

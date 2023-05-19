@@ -4,9 +4,9 @@
       "id": 1,
       "name": "Mulan",
       "owner": "Jiho",
-      "image": "images/Mulan.jpg",
+      "image": "/images/Mulan.jpg",
       "breed": "Domestic Long Hair",
-      "describtion": "She was adobted from SPCA. She spends most of the day outside and guards the house to ensure me and my husband is safe."
+      "description": "She was adobted from SPCA. She spends most of the day outside and guards the house to ensure me and my husband is safe."
     },
     {
       "id": 2,
@@ -14,14 +14,15 @@
       "owner": "Jiho",
       "image": "/images/Teemo.jpg",
       "breed": "Domestic Short Hair",
-      "describtion": "He is a HUNGRY boy."
+      "description": "He is a HUNGRY boy."
     },
     {
       "id": 3,
       "name": "Rocky",
       "owner": "Ben",
       "image": "/images/Rocky.png",
-      "breed": "Staffordshire"
+      "breed": "Staffordshire",
+      "description": "Rocky rocks"
     },
     {
       "id": 4,
@@ -29,7 +30,7 @@
       "owner": "Michael",
       "image": "/images/Frank.jpg",
       "breed": "Domestic Short Hair",
-      "describtion": "He is a very friendly boy, and was saved from a box dumped in a countdown parking lot."
+      "description": "He is a very friendly boy, and was saved from a box dumped in a countdown parking lot."
     },
     {
       "id": 5,
@@ -37,7 +38,7 @@
       "owner": "Michael",
       "image": "/images/Ollie.jpg",
       "breed": "Domestic Short Hair",
-      "describtion": "He is a lovely boy, but only accepts a limited number of pats before he absolutely destroys your hand. He chose us, just showed up at my flat  in 2012. Could not find the owners after a few weeks of searching, so I took him in permanently."
+      "description": "He is a lovely boy, but only accepts a limited number of pats before he absolutely destroys your hand. He chose us, just showed up at my flat  in 2012. Could not find the owners after a few weeks of searching, so I took him in permanently."
     },
     {
       "id": 6,
@@ -45,7 +46,7 @@
       "owner": "Siza",
       "image": "/images/Chi.jpeg",
       "breed": "Golden Hamster",
-      "describtion": "He loves to chew on anything he can get his hands on!  Come close and try to pat him, and he'll run!!!"
+      "description": "He loves to chew on anything he can get his hands on!  Come close and try to pat him, and he'll run!!!"
     }
   ]
 }
