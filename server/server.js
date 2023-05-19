@@ -39,20 +39,20 @@ server.get('/pets/:id', async (req, res) => {
   const puppy = puppies.find((puppy) => puppy.id === puppiesId)
 
   res.render('details', puppy)
-  console.log(puppy)
+  // console.log(puppy)
 })
 
-/*server.get(){
-
-}*/
+server.get('/addpet', (req, res) => {
+  res.render('addpet')
+})
 
 // localhost:3000/addpet
 server.post('/addpet', async (req, res) => {
-  console.log('req.body: ', req.body)
+  // console.log('req.body: ', req.body)
 
   const newPet = {
     id: Math.floor(Math.random() * 1000 + 4),
-    name: req.body.name,
+    name: req.body.yourPetsName,
     owner: req.body.owner,
     breed: req.body.breed,
     description: req.body.known_for,
@@ -64,12 +64,18 @@ server.post('/addpet', async (req, res) => {
     path.join(__dirname, './data/data.json'),
     'utf-8'
   )
-  const pet = JSON.parse(puppyData).pets
-  console.log(pet)
+  const pets = JSON.parse(puppyData)
 
-  const newFileContents = JSON.stringify(puppyData, null, 2)
+  const newFileContents = { ...pets }
 
-  await fs.writeFile(path.resolve(__dirname, '../data.json'), newFileContents)
+  newFileContents.puppies.push(newPet)
+
+  res.redirect('/')
+
+  await fs.writeFile(
+    path.resolve(__dirname, './data/data.json'),
+    JSON.stringify(newFileContents, null, 2)
+  )
 })
 
 module.exports = server
