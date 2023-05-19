@@ -1,5 +1,5 @@
 body {
-  background-color: #933708;
+  background-color: #372701;
   font-family: 'Arial', narrow;
 }
 
@@ -12,7 +12,7 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  background-color: #d49504;
+  background-color: #fcd578;
 }
 
 .puppy-list {
