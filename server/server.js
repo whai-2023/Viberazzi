@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 
-const fs = require('fs')
+const fs = require('node:fs/promises')
 const path = require('path')
 
 const server = express()
@@ -27,6 +27,20 @@ server.get('/', (req, res) => {
       res.render('home', JSON.parse(data))
     }
   })
+})
+
+// pet/:id route
+server.get('/puppies/:id', async (req, res) => {
+  const puppiesId = parseInt(req.params.id)
+
+  const puppyData = await fs.readFile(
+    path.join(__dirname, './data/data.json'),
+    'utf-8'
+  )
+  const puppies = JSON.parse(puppyData).puppies
+  const puppy = puppies.find((puppy) => puppy.id === puppiesId)
+
+  res.render('details', puppy)
 })
 
 module.exports = server
